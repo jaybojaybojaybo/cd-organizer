@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CD Organizer!</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Welcome to the CD Organizer</h1>
+    <ul>
+    @foreach (var album in Model)
+    {
+      <h3>@album.GetTitle()</h3>
+      <li>Price: $ @album.GetPrice()</li>
+    }
+    </ul>
+    <p><a href="/albums/new">Add a new CD</p>
+
+  </body>
+</html>

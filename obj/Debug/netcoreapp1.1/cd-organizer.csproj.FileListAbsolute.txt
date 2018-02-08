@@ -1,0 +1,8 @@
+/Users/Guest/cd-organizer/bin/Debug/netcoreapp1.1/cd-organizer.deps.json
+/Users/Guest/cd-organizer/bin/Debug/netcoreapp1.1/cd-organizer.runtimeconfig.json
+/Users/Guest/cd-organizer/bin/Debug/netcoreapp1.1/cd-organizer.runtimeconfig.dev.json
+/Users/Guest/cd-organizer/obj/Debug/netcoreapp1.1/cd-organizer.AssemblyInfo.cs
+/Users/Guest/cd-organizer/bin/Debug/netcoreapp1.1/cd-organizer.dll
+/Users/Guest/cd-organizer/bin/Debug/netcoreapp1.1/cd-organizer.pdb
+/Users/Guest/cd-organizer/obj/Debug/netcoreapp1.1/cd-organizer.dll
+/Users/Guest/cd-organizer/obj/Debug/netcoreapp1.1/cd-organizer.pdb
