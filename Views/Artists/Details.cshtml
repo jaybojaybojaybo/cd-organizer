@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CD Organizer!</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <h3>Here are all the albums by this artist:</h3>
+
+    <ol>
+    @foreach (var item in @Model["album"])
+    {
+      <li><a href='/artists/@Model["artist"].GetId()/albums/@Model["albums"].GetId()'> @album.GetTitle()</a></li>
+    }
+    </ol>
+
+    <p><a href='/artists/@Model["artist"].GetId()/albums/new'>Add a new album</a></p>
+    <p><a href='/albums/new'>Create New Album</a></p>
+    <p><a href='/'>Return to Main Page</a></p>
+
+
+  </body>
+</html>
