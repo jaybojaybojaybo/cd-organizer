@@ -16,7 +16,7 @@ namespace CDOrganizer.Controllers
     }
 
     [HttpGet("/artists/{artistId}/albums/{albumId}")]
-    public ActionResult Details(int artistId, int albumId)
+    public ActionResult Index(int artistId, int albumId)
     {
       Album album = Album.Find(albumId);
       Dictionary<string, object> model = new Dictionary<string, object>();

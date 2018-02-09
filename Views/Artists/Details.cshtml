@@ -9,13 +9,17 @@
     <h3>Here are all the albums by this artist:</h3>
 
     <ol>
-    @foreach (var item in @Model["album"])
+    @if (@Model["albums"].Count == 0)
     {
-      <li><a href='/artists/@Model["artist"].GetId()/albums/@Model["albums"].GetId()'> @album.GetTitle()</a></li>
+      <h3>No artists have been added yet!</h3>
+    }
+    @foreach (var album in @Model["albums"])
+    {
+      <li><a href='/artists/@Model["artist"].GetId()/albums/@album.GetId()'> @album.GetTitle()</a></li>
     }
     </ol>
 
-    <p><a href='/artists/@Model["artist"].GetId()/albums/new'>Add a new album</a></p>
+    <p><a href='/artists/@Model["artist"].GetId()/album/new'>Add a new album</a></p>
     <p><a href='/albums/new'>Create New Album</a></p>
     <p><a href='/'>Return to Main Page</a></p>
 

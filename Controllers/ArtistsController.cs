@@ -30,7 +30,7 @@ namespace CDOrganizer.Controllers
       return View("Index", allArtists);
     }
 
-    [HttpGet("artists/{id}")]
+    [HttpGet("/artists/{id}")]
     public ActionResult Details(int id)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
@@ -41,7 +41,7 @@ namespace CDOrganizer.Controllers
       return View(model);
     }
 
-    [HttpPost("/albums")]
+    [HttpPost("/albums/new")]
     public ActionResult CreateAlbum()
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
